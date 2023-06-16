@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inputHolder">
+        <input type="text" placeholder="What Is The City" />
+        <span>write a real address</span>
+      </div>
+      <div class="parent">
+        <div class="data">
+          <img src="media/cloudy.png" alt="" />
+          <div class="degree">
+            <div class="realDegree">
+              <div class="c active">
+                <h1>00.0</h1>
+                <span>°C</span>
+              </div>
+              <div class="f">
+                <h1>00.0</h1>
+                <span>°F</span>
+              </div>
+            </div>
+            <div class="fOrC">
+              <div class="cel">°C</div>
+              <div class="fer">°F</div>
+            </div>
+          </div>
+          <div class="cityName"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>

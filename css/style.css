@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c0d0e9;
+  font-family: "Cairo", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.parent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff4d;
+}
+
+.inputHolder {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.wrapper input {
+  border: none;
+  outline: none;
+  padding: 7px 81px 7px 11px;
+  background-color: white;
+  caret-color: rgb(0, 0, 0);
+  color: black;
+  margin: 0 auto 30px;
+  display: block;
+  position: relative;
+  top: 19px;
+  border-radius: 50px;
+}
+
+.wrapper input::placeholder {
+  color: rgba(37, 37, 37, 0.822);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.wrapper input:focus::placeholder {
+  opacity: 0;
+}
+
+.inputHolder span {
+  text-transform: capitalize;
+  color: #7f0000;
+  position: absolute;
+  bottom: -43px;
+  left: 11px;
+  font-size: 14px;
+  display: none;
+}
+
+.wrapper .data img {
+  width: 151px;
+  max-width: 100%;
+}
+
+.wrapper .data .degree {
+  position: relative;
+}
+
+.wrapper .data .degree .c,
+.wrapper .data .degree .f {
+  position: relative;
+  display: none;
+}
+
+.wrapper .data .degree .c h1 {
+  margin: 19px 0;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  padding: 0 0 11px;
+}
+
+.wrapper .data .degree .f h1 {
+  margin: 19px 0;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  padding: 0 0 11px;
+}
+
+.wrapper .data .degree .c span,
+.wrapper .data .degree .f span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 21px;
+  font-weight: normal;
+  user-select: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.fOrC {
+  position: absolute;
+  left: 50%;
+  bottom: -39px;
+  display: flex;
+  justify-content: space-between;
+  width: 89px;
+  transform: translateX(-50%);
+  font-size: 19px;
+  user-select: none;
+}
+
+.fOrC .fer {
+  cursor: pointer;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.fOrC .cel {
+  cursor: pointer;
+  user-select: none;
+}
+
+.cityName {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 113px;
+  opacity: 0.04;
+  z-index: -1;
+  white-space: nowrap;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .cityName {
+    font-size: 64px !important;
+  }
+}
